@@ -16,13 +16,13 @@ L’application n’est pas un outil de diagnostic médical, mais une démonstra
 - VS Code (développement)
 - Git / GitHub (versioning et partage)
 
-  🖥️ Fonctionnalités principales
+🖥️ Fonctionnalités principales
 - Interface graphique simple et intuitive
 - Sélection de symptômes via des checkbox
 - Analyse de correspondance avec :
-* symptômes de grippe
-* symptômes d’allergies
-* maux de gorge
+ symptômes de grippe
+ symptômes d’allergies
+ maux de gorge
 - Affichage dynamique :
 Résultats
 Conseils basiques
