@@ -112,4 +112,39 @@ if st.button("Analyser"):
         for c in conseils:
             st.write("• " + c)
         st.markdown("</div>", unsafe_allow_html=True)
+# =============================================
+# FORMULAIRE MÉDICAL IA (à coller à la fin de app.py)
+# =============================================
+
+@app.route('/symptomes')
+def formulaire_medical():
+    return '''
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyse de symptômes - IA</title>
+    <style>
+        body {font-family: Arial, sans-serif; background:#f8f9fa; padding:20px; margin:0;}
+        .container {max-width:800px; margin:40px auto; text-align:center; background:white; padding:30px; border-radius:20px; box-shadow:0 10px 40px rgba(0,0,0,0.1);}
+        h1 {color:#2c3e50;}
+        p {color:#7f8c8d;}
+        iframe {border:none; border-radius:16px; width:100%; height:950px; margin-top:20px;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Décrivez vos symptômes</h1>
+        <p>Notre intelligence artificielle analyse votre cas en quelques secondes<br>et prend automatiquement rendez-vous si nécessaire.</p>
+        
+        <iframe src="https://yastene44.app.n8n.cloud/form/1878a2aa-d70e-425e-af4b-08e604abef4f" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
+    '''
+
+# Ne touche pas à la ligne suivante (elle lance le serveur)
+if __name__ == "__main__":
+    app.run(debug=True)
 
